@@ -1,0 +1,46 @@
+.menu {
+  position: relative;
+  height: 50px;
+}
+.menu_diff {
+  position: absolute;
+  top: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 10px gray;
+}
+.menu_diff ul {
+  list-style: none;
+  padding-left: 1.3vw;
+  padding-right: 1.3vw;
+}
+.menu_diff ul li {
+  text-align: center;
+  padding: 0.5vw 0;
+  cursor: pointer;
+}
+.menu_diff ul li:hover {
+  color: #034bba;
+  text-shadow: -1px 0 1px white, 0 -1px 1px white, 0 1px 1px white, 1px 0 1px white,
+  0 0 8px white, 0 0 8px white, 0 0 8px white, 2px 2px 3px black;
+}
+.menu_btn {
+  border: 1px solid black;
+  background-color: #d6e4f9;
+  padding: 0.5vw;
+  margin-bottom: 0.5vw;
+  transition: all 1s;
+  cursor: pointer;
+}
+.menu_btn:hover {
+  background-color: #558ce0;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid #fff;
+  position: absolute;
+  top: -13px;
+  left: 60px;
+}

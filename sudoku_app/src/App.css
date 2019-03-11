@@ -1,0 +1,19 @@
+.App {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./Images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+  user-select: none;
+}
+.main_panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3vw;
+}

@@ -1,0 +1,25 @@
+.time {
+  display: flex;
+  margin-bottom: 0.7vw;
+}
+.pauseLogo {
+  width: 1.5vw;
+  height: 1.5vw;
+  border: 1px solid gray;
+  border-radius: 50%;
+  position: relative;
+  background: #ffffff90;
+  margin-left: 0.7vw;
+}
+.pauseLogo::after {
+  width: 1.5vw;
+  height: 0.95vw;
+  content: "";
+  position: absolute;
+  left: 0.45vw;
+  top: 0.23vw;
+  border-style: double;
+  border-color: gray;
+  border-width: 0px 0px 0px 0.5vw;
+  box-sizing: border-box;
+}

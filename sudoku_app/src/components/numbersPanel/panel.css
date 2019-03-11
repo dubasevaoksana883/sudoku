@@ -1,0 +1,76 @@
+.panel {
+}
+.numbtn {
+  border: 1px solid gray;
+  width: 3.5vw;
+  height: 3.5vw;
+  font-size: 3vw;
+  line-height: 3.5vw;
+  background-color: #ffffff80;
+}
+.panel_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel_line:nth-child(4) div {
+  width: 10.5vw;
+  background-image: url('../../Images/eraser.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.checkbox {
+  display: block;
+  margin-top: 2vw;
+}
+.checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+.checkbox__text {
+  position: relative;
+  padding: 0 0 0 60px;
+  cursor: pointer;
+  color: #076d61;
+  text-shadow: -1px 0 1px white, 0 -1px 1px white, 0 1px 1px white, 1px 0 1px white,
+  0 0 8px white, 0 0 8px white, 0 0 8px white, 2px 2px 3px black;
+  font-size: 20px;
+  line-height: 24px;
+}
+.checkbox__text:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+  transition: .2s;
+}
+.checkbox__text:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: .2s;
+}
+.checkbox input:checked + .checkbox__text:before {
+  background: #9FD468;
+}
+.checkbox input:checked + .checkbox__text:after {
+  left: 26px;
+}
+.checkbox input:focus + .checkbox__text:before {
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+}

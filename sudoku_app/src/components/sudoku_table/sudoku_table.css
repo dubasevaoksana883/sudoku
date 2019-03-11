@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+.box {
+  border-bottom: 4px solid #545454aa;
+  border-right: 4px solid #545454aa;
+  box-shadow: 8px 8px 25px #333333;
+}
+.mainDiv {
+  position: relative;
+}
+
+.line {
+  display: flex;
+
+}
+.cell {
+  width: 3vw;
+  height: 3vw;
+  border: 1px solid gray;
+  font-size: 2.5vw;
+  line-height: 3vw;
+}
+.cell:nth-child(3n){
+  border-right: 2px solid black;
+}
+.cell:last-child {
+  border-right: 1px solid black;
+}
+.line:nth-child(3n) {
+  border-bottom: 2px solid black;
+}
+.line:last-child {
+  border-bottom: 1px solid black;
+}
+.victory {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../Images/vin.gif");
+  background-size: cover;
+}
+.vin {
+  color: #0962f2;
+}
